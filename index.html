@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <h1 class="titulo">Encriptador</h1>
+  <h2 class="importante ">Este programa no acepta letras mayusculas,numeros ni caracteres especiales</h2>
+
+  <main class="main">
+
+    <section class="form box">
+
+      <form action="">
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+
+     
+
+
+       
+       <input class="text-input" type="text" name="input-texto" id="input-text" onkeypress="return validar(event)" placeholder="Ingrese el texto aqui">
+
+        <div class="boton1">
+
+            <button type="button" onclick="encriptar()" class="btn-encriptar">Encriptar</button>
+
+        </div>
+
+        <div class="boton2" >
+
+           <button type="button" onclick="desencriptar()" class="btn-desencriptar"><i> </i>Desencriptar</button>
+        </div>
+      
+       
+      </form>
+
+    </section>
+  
+    <section class="msg box">
+      <h2 id="">Mensaje encriptada:</h2>
+
+     <input class="text-input" type="text" onkeypress="return validar(event)" id="msg"></input>
+
+      <div class="boton3">
+
+        <button type="button" onclick="copiarTexto();" class="Copiar2">Copiar</button>
+      </div>
+      
+        
+
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
